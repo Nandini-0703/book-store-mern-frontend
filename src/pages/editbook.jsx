@@ -39,7 +39,7 @@ const Editbook = () => {
 
   setloading(true);
   axios
-  .put(`http://localhost:3000/books/${id}` , data)
+  .put(`https://book-store-mern-backend-1.onrender.com/books/${id}` , data)
   .then(
     () => {
       setloading(false);
