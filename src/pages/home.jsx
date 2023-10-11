@@ -54,7 +54,7 @@ return (
 
     {
         loading ? (<Spinner/>
-         ) : showtype == 'table' ? (<Bookstable books={books} />) : (<Bookscard books={books} />) 
+         ) : showtype === 'table' ? (<Bookstable books={books} />) : (<Bookscard books={books} />) 
     }
     </div>
 

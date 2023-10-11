@@ -2,7 +2,7 @@ import React , {useState} from 'react'
 import axios from 'axios'
 import Spinner from '../components/Spinner'
 import BackButton from '../components/BackButton'
-import { useNavigate } from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 const Createbook = () => {
 
@@ -21,7 +21,7 @@ const Createbook = () => {
   };
 
   setloading(true);
-  axios.post('https://book-store-mern-backend-1.onrender.com' , data)
+  axios.post('https://book-store-mern-backend-1.onrender.com/books' , data)
   .then(
     () => {
       setloading(false);
